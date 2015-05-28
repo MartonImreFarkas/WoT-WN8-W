@@ -43,11 +43,11 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 				UIColor(red: 126/255, green: 242/255, blue: 195/255, alpha: 1),
 				UIColor(red: 126/255, green: 242/255, blue: 195/255, alpha: 1)],
             itemTitles: [
-            "Gear",
-            "Globe",
-            "LoginPr",
-            "Profile",
-            "Star"],
+                "Gear",
+                "Globe",
+                "LoginPr",
+                "Profile",
+                "Star"],
 			selectedItemIndices: NSIndexSet(index: 0))
 		
 		sidebar.isSingleSelect = true
