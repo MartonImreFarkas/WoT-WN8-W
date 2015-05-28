@@ -16,6 +16,10 @@
 		0B876BC61B14A56B001CAE22 /* FrostedSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BC51B14A56B001CAE22 /* FrostedSidebar.swift */; };
 		0B876BC81B14A5B5001CAE22 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BC71B14A5B5001CAE22 /* TabBarController.swift */; };
 		0B876BCD1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift */; };
+		0B876BD11B14BA6A001CAE22 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD01B14BA6A001CAE22 /* LoginWireFrame.swift */; };
+		0B876BD31B14BA7B001CAE22 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD21B14BA7B001CAE22 /* LoginPresenter.swift */; };
+		0B876BD51B14BA9B001CAE22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD41B14BA9B001CAE22 /* LoginViewController.swift */; };
+		0B876BD71B14BAAD001CAE22 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD61B14BAAD001CAE22 /* LoginInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		0B876BC51B14A56B001CAE22 /* FrostedSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FrostedSidebar.swift; path = FrostedSidebar/FrostedSidebar.swift; sourceTree = "<group>"; };
 		0B876BC71B14A5B5001CAE22 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = FrostedSidebar/TabBarController.swift; sourceTree = "<group>"; };
 		0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerMenuButotnExtension.swift; path = Common/UIViewControllerMenuButotnExtension.swift; sourceTree = "<group>"; };
+		0B876BD01B14BA6A001CAE22 /* LoginWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWireFrame.swift; path = Modules/Login/LoginWireFrame.swift; sourceTree = "<group>"; };
+		0B876BD21B14BA7B001CAE22 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = Modules/Login/LoginPresenter.swift; sourceTree = "<group>"; };
+		0B876BD41B14BA9B001CAE22 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Modules/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		0B876BD61B14BAAD001CAE22 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginInteractor.swift; path = Modules/Login/LoginInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,10 @@
 		0B876BCF1B14B845001CAE22 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0B876BD01B14BA6A001CAE22 /* LoginWireFrame.swift */,
+				0B876BD21B14BA7B001CAE22 /* LoginPresenter.swift */,
+				0B876BD41B14BA9B001CAE22 /* LoginViewController.swift */,
+				0B876BD61B14BAAD001CAE22 /* LoginInteractor.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -255,9 +267,13 @@
 			files = (
 				0B876BC61B14A56B001CAE22 /* FrostedSidebar.swift in Sources */,
 				0B876BC81B14A5B5001CAE22 /* TabBarController.swift in Sources */,
+				0B876BD31B14BA7B001CAE22 /* LoginPresenter.swift in Sources */,
 				0B876BCD1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift in Sources */,
+				0B876BD51B14BA9B001CAE22 /* LoginViewController.swift in Sources */,
 				0B876BA51B14A328001CAE22 /* ViewController.swift in Sources */,
+				0B876BD11B14BA6A001CAE22 /* LoginWireFrame.swift in Sources */,
 				0B876BA31B14A328001CAE22 /* AppDelegate.swift in Sources */,
+				0B876BD71B14BAAD001CAE22 /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
         <!--Item 2-->
         <scene sceneID="7X6-dN-Ne2">
             <objects>
-                <viewController id="Wiw-U2-gGb" customClass="ViewController" customModule="WoT_WN8_W" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Wiw-U2-gGb" customClass="LoginViewController" customModule="WoT_WN8_W" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="waG-zd-Zgs"/>
                         <viewControllerLayoutGuide type="bottom" id="Afd-F1-0vg"/>

@@ -58,6 +58,7 @@ public class FrostedSidebar: UIViewController {
     private var images:                 [UIImage]                   = []
     private var borderColors:           [UIColor]?                  = nil
     private var itemViews:              [CalloutItem]               = []
+    private var itemTitleLabels:        [UILabel]                   = []
     
     //MARK: Public Methods
     
@@ -65,7 +66,7 @@ public class FrostedSidebar: UIViewController {
         super.init(coder: aDecoder)
     }
     
-    public init(itemImages: [UIImage], colors: [UIColor]?, selectedItemIndices: NSIndexSet?){
+    public init(itemImages: [UIImage], colors: [UIColor]?, itemTitles: [String], selectedItemIndices: NSIndexSet?){
         contentView.alwaysBounceHorizontal = false
         contentView.alwaysBounceVertical = true
         contentView.bounces = true
@@ -86,6 +87,14 @@ public class FrostedSidebar: UIViewController {
             view.imageView.image = image
             contentView.addSubview(view)
             itemViews += [view]
+            
+            let titleLabel = UILabel()
+            titleLabel.text = "\(index). \(itemTitles[index])"
+            titleLabel.textColor = UIColor.whiteColor()
+            titleLabel.textAlignment = NSTextAlignment.Center
+            contentView.addSubview(titleLabel)
+            itemTitleLabels += [titleLabel]
+            
             if borderColors != nil{
                 if selectedIndices.containsIndex(index){
                     let color = borderColors![index]
@@ -372,9 +381,10 @@ public class FrostedSidebar: UIViewController {
     private func layoutItems(){
         let leftPadding: CGFloat = (width - itemSize.width) / 2
         let topPadding: CGFloat = leftPadding
+        let spaceForTitle: CGFloat = topPadding
         for (index, item) in enumerate(itemViews){
             let idx: CGFloat = CGFloat(index)
-            let frame = CGRect(x: leftPadding, y: topPadding*idx + itemSize.height*idx + topPadding, width:itemSize.width, height: itemSize.height)
+            let frame = CGRect(x: leftPadding, y: spaceForTitle*idx + topPadding*idx + itemSize.height*idx + topPadding, width:itemSize.width, height: itemSize.height)
             item.frame = frame
             item.layer.cornerRadius = frame.size.width / 2
             item.layer.borderColor = UIColor.clearColor().CGColor
@@ -384,9 +394,25 @@ public class FrostedSidebar: UIViewController {
                     item.layer.borderColor = borderColors![index].CGColor
                 }
             }
+            
+    /*        let titleFrame = CGRect(x: leftPadding, y: spaceForTitle*idx + (topPadding + itemSize.height)*(idx+1) + 10, width:itemSize.width, height: spaceForTitle-10)
+            
+            println(titleFrame)
+            itemTitleLabels[index].frame = titleFrame
+            itemTitleLabels[index].layoutIfNeeded()
+            */
         }
+        
+        for (index, item) in enumerate(itemTitleLabels){
+            let idx: CGFloat = CGFloat(index)
+            let titleFrame = CGRect(x: leftPadding, y: spaceForTitle*idx + (topPadding + itemSize.height)*(idx+1) + 10, width:itemSize.width, height: spaceForTitle-10)
+            
+            println(titleFrame)
+            item.frame = titleFrame
+        }
+        
         let itemCount = CGFloat(itemViews.count)
-        contentView.contentSize = CGSizeMake(0, itemCount * (itemSize.height + topPadding) + topPadding)
+        contentView.contentSize = CGSizeMake(0, itemCount * (itemSize.height + topPadding + spaceForTitle) + topPadding)
     }
     
     private func indexOfTap(location: CGPoint) -> Int? {
