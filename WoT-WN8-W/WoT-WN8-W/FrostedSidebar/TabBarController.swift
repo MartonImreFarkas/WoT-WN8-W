@@ -11,7 +11,11 @@ import UIKit
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
 	
 	var sidebar: FrostedSidebar!
-	
+    let loginWireFrame = LoginWireFrame()
+    let profileWireFrame = ProfileWireFrame()
+    let expectedValuesWireFrame = ExpectedValuesWireFrame()
+    
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		delegate = self
@@ -19,17 +23,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 		
 		moreNavigationController.navigationBar.hidden = true
         
-        var lwf = LoginWireFrame()
         
-        var lvc = lwf.rootViewController()
-        
-        var vcs = viewControllers
-        vcs?.append(lvc)
-        
-        setViewControllers(vcs!, animated: false)
+        setup()
 
-        var xx = viewControllers
-        
 		sidebar = FrostedSidebar(itemImages: [
 			UIImage(named: "gear")!,
 			UIImage(named: "globe")!,
@@ -63,5 +59,24 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         selectedIndex = index
         sidebar.selectItemAtIndex(index)
     }
-	
+
+
+    
+    //MARK - setupMethod
+    func setup() {
+        var lvc = loginWireFrame.rootViewController()
+        var pvc = profileWireFrame.rootViewController()
+        var expvvc = expectedValuesWireFrame.rootViewController()
+        
+        var vcs = viewControllers
+        
+        vcs?.append(lvc)
+        vcs?.append(pvc)
+        vcs?.append(expvvc)
+        
+        setViewControllers(vcs!, animated: false)
+
+    }
+
+
 }

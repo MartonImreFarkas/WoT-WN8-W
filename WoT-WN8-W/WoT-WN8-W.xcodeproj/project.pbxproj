@@ -15,11 +15,26 @@
 		0B876BB91B14A328001CAE22 /* WoT_WN8_WTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BB81B14A328001CAE22 /* WoT_WN8_WTests.swift */; };
 		0B876BC61B14A56B001CAE22 /* FrostedSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BC51B14A56B001CAE22 /* FrostedSidebar.swift */; };
 		0B876BC81B14A5B5001CAE22 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BC71B14A5B5001CAE22 /* TabBarController.swift */; };
-		0B876BCD1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift */; };
+		0B876BCD1B14AFB9001CAE22 /* UIViewControllerMenuButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButtonExtension.swift */; };
 		0B876BD11B14BA6A001CAE22 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD01B14BA6A001CAE22 /* LoginWireFrame.swift */; };
 		0B876BD31B14BA7B001CAE22 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD21B14BA7B001CAE22 /* LoginPresenter.swift */; };
 		0B876BD51B14BA9B001CAE22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD41B14BA9B001CAE22 /* LoginViewController.swift */; };
 		0B876BD71B14BAAD001CAE22 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD61B14BAAD001CAE22 /* LoginInteractor.swift */; };
+		0B876BD91B188059001CAE22 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BD81B188059001CAE22 /* UserDataStore.swift */; };
+		0B876BDC1B189BBD001CAE22 /* ProfileWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BDB1B189BBD001CAE22 /* ProfileWireFrame.swift */; };
+		0B876BDE1B189C1F001CAE22 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BDD1B189C1F001CAE22 /* ProfilePresenter.swift */; };
+		0B876BE01B189CAE001CAE22 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BDF1B189CAE001CAE22 /* ProfileViewController.swift */; };
+		0B876BE21B189D35001CAE22 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876BE11B189D35001CAE22 /* ProfileInteractor.swift */; };
+		0B9928011B1C549A00E2A863 /* ExpectedValuesWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928001B1C549A00E2A863 /* ExpectedValuesWireFrame.swift */; };
+		0B9928031B1C54B200E2A863 /* ExpectedValuesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928021B1C54B200E2A863 /* ExpectedValuesPresenter.swift */; };
+		0B9928051B1C56F600E2A863 /* ExpectedValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928041B1C56F600E2A863 /* ExpectedValuesViewController.swift */; };
+		0B9928071B1C570900E2A863 /* ExpectedValuesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928061B1C570900E2A863 /* ExpectedValuesInteractor.swift */; };
+		0B9928091B1C585200E2A863 /* ExpectedValuesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928081B1C585200E2A863 /* ExpectedValuesDataStore.swift */; };
+		0B99280B1B1C5CC700E2A863 /* ExpectedValueStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99280A1B1C5CC700E2A863 /* ExpectedValueStruct.swift */; };
+		0B99280E1B1C765700E2A863 /* VehiclesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99280D1B1C765700E2A863 /* VehiclesListInteractor.swift */; };
+		0B9928101B1C7C6700E2A863 /* VehicleDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99280F1B1C7C6700E2A863 /* VehicleDataStruct.swift */; };
+		0B9928161B1C890300E2A863 /* ExpectedValuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928151B1C890300E2A863 /* ExpectedValuesTableViewCell.swift */; };
+		0B99281A1B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928191B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +60,26 @@
 		0B876BB81B14A328001CAE22 /* WoT_WN8_WTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoT_WN8_WTests.swift; sourceTree = "<group>"; };
 		0B876BC51B14A56B001CAE22 /* FrostedSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FrostedSidebar.swift; path = FrostedSidebar/FrostedSidebar.swift; sourceTree = "<group>"; };
 		0B876BC71B14A5B5001CAE22 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = FrostedSidebar/TabBarController.swift; sourceTree = "<group>"; };
-		0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerMenuButotnExtension.swift; path = Common/UIViewControllerMenuButotnExtension.swift; sourceTree = "<group>"; };
+		0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerMenuButtonExtension.swift; path = Common/UIViewControllerMenuButtonExtension.swift; sourceTree = "<group>"; };
 		0B876BD01B14BA6A001CAE22 /* LoginWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWireFrame.swift; path = Modules/Login/LoginWireFrame.swift; sourceTree = "<group>"; };
 		0B876BD21B14BA7B001CAE22 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = Modules/Login/LoginPresenter.swift; sourceTree = "<group>"; };
 		0B876BD41B14BA9B001CAE22 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Modules/Login/LoginViewController.swift; sourceTree = "<group>"; };
 		0B876BD61B14BAAD001CAE22 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginInteractor.swift; path = Modules/Login/LoginInteractor.swift; sourceTree = "<group>"; };
+		0B876BD81B188059001CAE22 /* UserDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDataStore.swift; path = Common/UserDataStore.swift; sourceTree = "<group>"; };
+		0B876BDB1B189BBD001CAE22 /* ProfileWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileWireFrame.swift; path = Modules/Profile/ProfileWireFrame.swift; sourceTree = "<group>"; };
+		0B876BDD1B189C1F001CAE22 /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilePresenter.swift; path = Modules/Profile/ProfilePresenter.swift; sourceTree = "<group>"; };
+		0B876BDF1B189CAE001CAE22 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Modules/Profile/ProfileViewController.swift; sourceTree = "<group>"; };
+		0B876BE11B189D35001CAE22 /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileInteractor.swift; path = Modules/Profile/ProfileInteractor.swift; sourceTree = "<group>"; };
+		0B9928001B1C549A00E2A863 /* ExpectedValuesWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesWireFrame.swift; path = Modules/ExpectedValues/ExpectedValuesWireFrame.swift; sourceTree = "<group>"; };
+		0B9928021B1C54B200E2A863 /* ExpectedValuesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesPresenter.swift; path = Modules/ExpectedValues/ExpectedValuesPresenter.swift; sourceTree = "<group>"; };
+		0B9928041B1C56F600E2A863 /* ExpectedValuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesViewController.swift; path = Modules/ExpectedValues/ExpectedValuesViewController.swift; sourceTree = "<group>"; };
+		0B9928061B1C570900E2A863 /* ExpectedValuesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesInteractor.swift; path = Modules/ExpectedValues/ExpectedValuesInteractor.swift; sourceTree = "<group>"; };
+		0B9928081B1C585200E2A863 /* ExpectedValuesDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesDataStore.swift; path = Modules/ExpectedValues/ExpectedValuesDataStore.swift; sourceTree = "<group>"; };
+		0B99280A1B1C5CC700E2A863 /* ExpectedValueStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValueStruct.swift; path = Modules/ExpectedValues/ExpectedValueStruct.swift; sourceTree = "<group>"; };
+		0B99280D1B1C765700E2A863 /* VehiclesListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehiclesListInteractor.swift; path = Modules/VehiclesList/VehiclesListInteractor.swift; sourceTree = "<group>"; };
+		0B99280F1B1C7C6700E2A863 /* VehicleDataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehicleDataStruct.swift; path = Modules/VehiclesList/VehicleDataStruct.swift; sourceTree = "<group>"; };
+		0B9928151B1C890300E2A863 /* ExpectedValuesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesTableViewCell.swift; path = Modules/ExpectedValues/ExpectedValuesTableViewCell.swift; sourceTree = "<group>"; };
+		0B9928191B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesDetailsViewController.swift; path = Modules/ExpectedValues/ExpectedValuesDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +171,8 @@
 		0B876BCB1B14AC5C001CAE22 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift */,
+				0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButtonExtension.swift */,
+				0B876BD81B188059001CAE22 /* UserDataStore.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -150,6 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				0B876BCF1B14B845001CAE22 /* Login */,
+				0B876BDA1B189843001CAE22 /* Profile */,
+				0B9927FF1B1C546A00E2A863 /* ExpectedValues */,
+				0B99280C1B1C761400E2A863 /* VehiclesList */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -163,6 +197,41 @@
 				0B876BD61B14BAAD001CAE22 /* LoginInteractor.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		0B876BDA1B189843001CAE22 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0B876BDB1B189BBD001CAE22 /* ProfileWireFrame.swift */,
+				0B876BDD1B189C1F001CAE22 /* ProfilePresenter.swift */,
+				0B876BDF1B189CAE001CAE22 /* ProfileViewController.swift */,
+				0B876BE11B189D35001CAE22 /* ProfileInteractor.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		0B9927FF1B1C546A00E2A863 /* ExpectedValues */ = {
+			isa = PBXGroup;
+			children = (
+				0B9928001B1C549A00E2A863 /* ExpectedValuesWireFrame.swift */,
+				0B9928021B1C54B200E2A863 /* ExpectedValuesPresenter.swift */,
+				0B9928041B1C56F600E2A863 /* ExpectedValuesViewController.swift */,
+				0B9928151B1C890300E2A863 /* ExpectedValuesTableViewCell.swift */,
+				0B9928061B1C570900E2A863 /* ExpectedValuesInteractor.swift */,
+				0B9928081B1C585200E2A863 /* ExpectedValuesDataStore.swift */,
+				0B99280A1B1C5CC700E2A863 /* ExpectedValueStruct.swift */,
+				0B9928191B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift */,
+			);
+			name = ExpectedValues;
+			sourceTree = "<group>";
+		};
+		0B99280C1B1C761400E2A863 /* VehiclesList */ = {
+			isa = PBXGroup;
+			children = (
+				0B99280D1B1C765700E2A863 /* VehiclesListInteractor.swift */,
+				0B99280F1B1C7C6700E2A863 /* VehicleDataStruct.swift */,
+			);
+			name = VehiclesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,12 +336,27 @@
 			files = (
 				0B876BC61B14A56B001CAE22 /* FrostedSidebar.swift in Sources */,
 				0B876BC81B14A5B5001CAE22 /* TabBarController.swift in Sources */,
+				0B9928031B1C54B200E2A863 /* ExpectedValuesPresenter.swift in Sources */,
+				0B876BDE1B189C1F001CAE22 /* ProfilePresenter.swift in Sources */,
+				0B99280E1B1C765700E2A863 /* VehiclesListInteractor.swift in Sources */,
+				0B9928161B1C890300E2A863 /* ExpectedValuesTableViewCell.swift in Sources */,
+				0B99280B1B1C5CC700E2A863 /* ExpectedValueStruct.swift in Sources */,
 				0B876BD31B14BA7B001CAE22 /* LoginPresenter.swift in Sources */,
-				0B876BCD1B14AFB9001CAE22 /* UIViewControllerMenuButotnExtension.swift in Sources */,
+				0B876BCD1B14AFB9001CAE22 /* UIViewControllerMenuButtonExtension.swift in Sources */,
+				0B9928091B1C585200E2A863 /* ExpectedValuesDataStore.swift in Sources */,
+				0B9928051B1C56F600E2A863 /* ExpectedValuesViewController.swift in Sources */,
+				0B876BDC1B189BBD001CAE22 /* ProfileWireFrame.swift in Sources */,
+				0B876BE21B189D35001CAE22 /* ProfileInteractor.swift in Sources */,
 				0B876BD51B14BA9B001CAE22 /* LoginViewController.swift in Sources */,
+				0B9928071B1C570900E2A863 /* ExpectedValuesInteractor.swift in Sources */,
 				0B876BA51B14A328001CAE22 /* ViewController.swift in Sources */,
 				0B876BD11B14BA6A001CAE22 /* LoginWireFrame.swift in Sources */,
 				0B876BA31B14A328001CAE22 /* AppDelegate.swift in Sources */,
+				0B876BE01B189CAE001CAE22 /* ProfileViewController.swift in Sources */,
+				0B99281A1B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift in Sources */,
+				0B9928011B1C549A00E2A863 /* ExpectedValuesWireFrame.swift in Sources */,
+				0B9928101B1C7C6700E2A863 /* VehicleDataStruct.swift in Sources */,
+				0B876BD91B188059001CAE22 /* UserDataStore.swift in Sources */,
 				0B876BD71B14BAAD001CAE22 /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +553,7 @@
 				0B876BBE1B14A328001CAE22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B876BBF1B14A328001CAE22 /* Build configuration list for PBXNativeTarget "WoT-WN8-WTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +562,7 @@
 				0B876BC11B14A328001CAE22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

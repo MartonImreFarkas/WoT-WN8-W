@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTap(sender: AnyObject) {
-        (tabBarController as! TabBarController).changeToIndex(1)
+        (tabBarController as! TabBarController).changeToIndex(2)
     }
 }
 

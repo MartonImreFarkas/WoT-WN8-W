@@ -16,7 +16,7 @@ protocol LoginRouter: class {
 
 class LoginWireFrame: LoginRouter {
     private var view: LoginViewController
-    private var presenter: LoginPresenterEventHandler
+    private var presenter: protocol<LoginPresenterEventHandler>
     
     init() {
         self.view = LoginViewController.createView()
