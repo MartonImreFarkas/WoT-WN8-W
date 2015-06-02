@@ -248,11 +248,10 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ussr-object_907" translatesAutoresizingMaskIntoConstraints="NO" id="0um-sz-zEE">
-                                                    <rect key="frame" x="-6" y="1" width="168" height="42"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0um-sz-zEE">
+                                                    <rect key="frame" x="-6" y="0.0" width="172" height="43"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="0um-sz-zEE" secondAttribute="height" multiplier="4:1" id="DbM-tn-KbW"/>
-                                                        <constraint firstAttribute="width" constant="168" id="rGx-FF-sTa"/>
+                                                        <constraint firstAttribute="width" secondItem="0um-sz-zEE" secondAttribute="height" multiplier="4:1" id="bE2-xQ-3vE"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2350" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOM-xd-mBa">
@@ -299,10 +298,11 @@
                                                 <constraint firstItem="ORA-cb-QBt" firstAttribute="top" secondItem="cSf-gv-ne4" secondAttribute="top" constant="5" id="SoC-VP-aHY"/>
                                                 <constraint firstItem="xy5-GC-iUw" firstAttribute="leading" secondItem="ORA-cb-QBt" secondAttribute="trailing" constant="5" id="WCA-DP-FWe"/>
                                                 <constraint firstAttribute="bottom" secondItem="uOM-xd-mBa" secondAttribute="bottom" constant="4" id="WIs-ac-Ico"/>
+                                                <constraint firstItem="0um-sz-zEE" firstAttribute="top" secondItem="cSf-gv-ne4" secondAttribute="top" id="Xch-mT-Ysr"/>
                                                 <constraint firstItem="xy5-GC-iUw" firstAttribute="centerY" secondItem="ORA-cb-QBt" secondAttribute="centerY" constant="-1" id="cOe-kf-E4s"/>
+                                                <constraint firstAttribute="bottom" secondItem="0um-sz-zEE" secondAttribute="bottom" id="nFn-g1-PSt"/>
                                                 <constraint firstAttribute="centerY" secondItem="XSl-tz-Alc" secondAttribute="centerY" id="qVA-bq-DCV"/>
                                                 <constraint firstItem="XSl-tz-Alc" firstAttribute="leading" secondItem="0um-sz-zEE" secondAttribute="leading" constant="100" id="tab-wO-L7Q"/>
-                                                <constraint firstAttribute="centerY" secondItem="0um-sz-zEE" secondAttribute="centerY" id="zSu-Fo-imo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -312,7 +312,6 @@
                                             <outlet property="tankNationFlag" destination="xy5-GC-iUw" id="yVz-cd-7Py"/>
                                             <outlet property="tankTierLabel" destination="ORA-cb-QBt" id="vjE-1h-2Cg"/>
                                             <outlet property="tankTypeLabel" destination="rbe-Xk-79a" id="psI-pM-7Qw"/>
-                                            <segue destination="ox8-SL-wO6" kind="presentation" id="vkT-KY-i8c"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -488,6 +487,5 @@
     <resources>
         <image name="Graffiti_stickers_ussr_S" width="23" height="23"/>
         <image name="burger" width="19" height="17"/>
-        <image name="ussr-object_907" width="62" height="15"/>
     </resources>
 </document>

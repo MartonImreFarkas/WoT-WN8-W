@@ -21,6 +21,8 @@ class ExpectedValuesViewController: UIViewController {
     var vehicleList = [VehicleDataStruct]()
     var vehiclesExpectedValues = [ExpectedValueStruct]()
     
+    let imageLoader = ImageLoader()
+    
      class func createView() -> ExpectedValuesViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyBoard.instantiateViewControllerWithIdentifier("ExpectedValuesViewController") as! ExpectedValuesViewController
@@ -58,6 +60,19 @@ extension ExpectedValuesViewController : UITableViewDataSource {
                 break
             }
         }
+        
+        cell.tankNationFlag.image = UIImage(named: vehicleData.nationFlagImageName!)
+   
+
+       // cell.imageView?.image = nil
+        imageLoader.imageForUrl(vehicleData.image_small!, completionHandler: { (image, url) -> () in
+     //       println(cell.imageView?.frame.size)
+            cell.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
+            cell.imageView?.image = image
+   //         println(cell.imageView?.frame.size)
+      //      cell.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
+            cell.imageView?.sizeToFit()
+        })
         return cell
     }
     

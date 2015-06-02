@@ -19,4 +19,5 @@ class ExpectedValuesTableViewCell: UITableViewCell {
     @IBOutlet weak var tankTypeLabel: UILabel!
     
     @IBOutlet weak var expectedDamageValueLabel: UILabel!
+    
 }

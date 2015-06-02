@@ -35,6 +35,7 @@
 		0B9928101B1C7C6700E2A863 /* VehicleDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99280F1B1C7C6700E2A863 /* VehicleDataStruct.swift */; };
 		0B9928161B1C890300E2A863 /* ExpectedValuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928151B1C890300E2A863 /* ExpectedValuesTableViewCell.swift */; };
 		0B99281A1B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928191B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift */; };
+		0B99281C1B1D97E800E2A863 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99281B1B1D97E800E2A863 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		0B99280F1B1C7C6700E2A863 /* VehicleDataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehicleDataStruct.swift; path = Modules/VehiclesList/VehicleDataStruct.swift; sourceTree = "<group>"; };
 		0B9928151B1C890300E2A863 /* ExpectedValuesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesTableViewCell.swift; path = Modules/ExpectedValues/ExpectedValuesTableViewCell.swift; sourceTree = "<group>"; };
 		0B9928191B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesDetailsViewController.swift; path = Modules/ExpectedValues/ExpectedValuesDetailsViewController.swift; sourceTree = "<group>"; };
+		0B99281B1B1D97E800E2A863 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Common/ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			children = (
 				0B876BCC1B14AFB9001CAE22 /* UIViewControllerMenuButtonExtension.swift */,
 				0B876BD81B188059001CAE22 /* UserDataStore.swift */,
+				0B99281B1B1D97E800E2A863 /* ImageLoader.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				0B9928071B1C570900E2A863 /* ExpectedValuesInteractor.swift in Sources */,
 				0B876BA51B14A328001CAE22 /* ViewController.swift in Sources */,
 				0B876BD11B14BA6A001CAE22 /* LoginWireFrame.swift in Sources */,
+				0B99281C1B1D97E800E2A863 /* ImageLoader.swift in Sources */,
 				0B876BA31B14A328001CAE22 /* AppDelegate.swift in Sources */,
 				0B876BE01B189CAE001CAE22 /* ProfileViewController.swift in Sources */,
 				0B99281A1B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift in Sources */,
