@@ -25,5 +25,10 @@ class ViewController: UIViewController {
     @IBAction func buttonTap(sender: AnyObject) {
         (tabBarController as! TabBarController).changeToIndex(2)
     }
+
+
+    @IBAction func navigateToIndex4(sender: AnyObject) {
+        (tabBarController as! TabBarController).changeToIndex(4)
+    }
 }
 

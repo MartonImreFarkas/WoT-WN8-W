@@ -7,37 +7,35 @@
 //
 
 import Foundation
-import Foundation
 
+class VehicleListInteractor {
+    
+    let baseVehicleListUriKey = "http://api.worldoftanks.eu/wot/encyclopedia/tanks/?"
+    
 
-// http://www.wnefficiency.net/exp/expected_tank_values_20.json
-
-class VehiclesListInteractor {
-    
-    //http://api.worldoftanks.eu/wot/encyclopedia/tanks/?application_id=demo
-    let baseVehicleListUriKey = "http://api.worldoftanks.eu/wot/encyclopedia/tanks/?"   
-    
-    var vehicleListData: NSData?
-    
     var vehicleDataArray = [VehicleDataStruct]()
     
     
-    func getExpectedValuesSync() -> [VehicleDataStruct] {
+    func getVehicleListSync() -> [VehicleDataStruct] {
         
         let url = NSURL(string: baseVehicleListUriKey + appIdKey + appIdString)
-        vehicleListData = NSData(contentsOfURL: url!)
-        
-        deserialize()
+        if let vehicleListData = NSData(contentsOfURL: url!)
+        {
+            deserialize(vehicleListData)
+        }
         
         return vehicleDataArray
     }
     
-    func deserialize() {
+    func deserialize(vehicleListData: NSData) {
         
-        if let json: NSDictionary = NSJSONSerialization.JSONObjectWithData(vehicleListData!, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary {
+        if let json: NSDictionary = NSJSONSerialization.JSONObjectWithData(vehicleListData, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary {
             if let items = json["data"] as? NSDictionary {
+                let vninD = VehicleNationImageNameStruct().allValuesDict()
+                let vtinD = VehicleTypeImageName().allValuesDict()
+                
                 for (key, value) in items {
-                    // construct your model objects here
+                  
                     let dict =  value as! NSDictionary
                    
                     var vehicleDataStruct = VehicleDataStruct()
@@ -46,7 +44,7 @@ class VehiclesListInteractor {
                     vehicleDataStruct.name = dict["name"] as? String
                     vehicleDataStruct.level = dict["level"] as? Int
                     vehicleDataStruct.image = dict["image"] as? String
-                    vehicleDataStruct.image_small = dict["image_small"] as? String // NSURL(string: (dict["image_small"] as! String))
+                    vehicleDataStruct.image_small = dict["image_small"] as? String
                     vehicleDataStruct.nation = dict["nation"] as? String
                     vehicleDataStruct.is_premium = dict["is_premium"] as? Bool
                     vehicleDataStruct.type_i18n = dict["type_i18n"] as? String
@@ -63,10 +61,16 @@ class VehiclesListInteractor {
                         }
                     }
                     
-                    let vnins = VehicleNationImageNameStruct()
-                    let vninD = vnins.allValuesDict()
-                    
                     vehicleDataStruct.nationFlagImageName = vninD[vehicleDataStruct.nationEnum!]
+                    
+                    for vehicleType in VehicleTypeEnum.allValues{
+                        if (vehicleType.rawValue == vehicleDataStruct.type) {
+                            vehicleDataStruct.typeEnum = vehicleType
+                            break
+                        }
+                    }
+                    
+                    vehicleDataStruct.typeImageName = vtinD[vehicleDataStruct.typeEnum!]
 
                     vehicleDataArray.append(vehicleDataStruct)
                 }

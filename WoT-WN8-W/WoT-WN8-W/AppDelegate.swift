@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        prepareKingfisher()
         return true
     }
 
@@ -42,5 +44,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    
+    func prepareKingfisher() {
+        
+        let downloader = KingfisherManager.sharedManager.downloader
+        //downloader.trustedHosts = Set(["i.scdn.co"])
+        
+        // Download process will timeout after 5 seconds. Default is 15.
+        downloader.downloadTimeout = 5
+        
+        let cache = KingfisherManager.sharedManager.cache
+        
+        // Set max disk cache to 50 mb. Default is no limit.
+        //let mb : UInt = 50
+        //cache.maxDiskCacheSize = mb * 1024 * 1024
+        
+        // Set max disk cache to duration to 365 days, Default is 1 week.
+        //let days : NSTimeInterval = 365
+        //cache.maxCachePeriodInSecond = 60 * 60 * 24 * days
+        
+        cache.calculateDiskCacheSizeWithCompletionHandler { (size) -> () in
+            println("disk size in bytes: \(size)")
+        }
+        
+    }
+    
 }
 

@@ -13,7 +13,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 	var sidebar: FrostedSidebar!
     let loginWireFrame = LoginWireFrame()
     let profileWireFrame = ProfileWireFrame()
-    let expectedValuesWireFrame = ExpectedValuesWireFrame()
+    let vehicleListWireFrame = VehicleListWireFrame()
+  //  let expectedValuesWireFrame = ExpectedValuesWireFrame()
+    
     
 
 	override func viewDidLoad() {
@@ -66,13 +68,15 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     func setup() {
         var lvc = loginWireFrame.rootViewController()
         var pvc = profileWireFrame.rootViewController()
-        var expvvc = expectedValuesWireFrame.rootViewController()
+        var vlvc =  vehicleListWireFrame.rootViewController()
+       // var expvvc = expectedValuesWireFrame.rootViewController()
         
         var vcs = viewControllers
         
         vcs?.append(lvc)
         vcs?.append(pvc)
-        vcs?.append(expvvc)
+        vcs?.append(vlvc)
+      //  vcs?.append(expvvc)
         
         setViewControllers(vcs!, animated: false)
 

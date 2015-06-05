@@ -17,6 +17,11 @@ struct ExpectedValueStruct {
     var expWinRate:Double?
 
     init() {
-
+        IDNum = 0
+        expFrag = 0
+        expDamage = 0
+        expSpot = 0
+        expDef = 0
+        expWinRate = 0
     }
 }

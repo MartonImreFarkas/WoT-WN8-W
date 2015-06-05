@@ -25,6 +25,8 @@ struct VehicleDataStruct {
     var tank_id : Int?
     var nationEnum : VehicleNationEnum?
     var nationFlagImageName : String?
+    var typeEnum : VehicleTypeEnum?
+    var typeImageName: String?
     
     init() {
         
@@ -32,15 +34,8 @@ struct VehicleDataStruct {
 }
 
 
-
 enum VehicleNationEnum : String {
     case Ussr = "ussr", Germany = "germany", Usa = "usa", France = "france", Uk = "uk", China = "china", Japan = "japan"
-    
-    static let allValues = [Ussr, Germany, Usa, France, Uk, China, Japan]
-}
-
-enum VehicleNationImageName : String {
-    case Ussr = "Graffiti_stickers_ussr_S", Germany = "Graffiti_stickers_germany_S", Usa = "Graffiti_stickers_usa_A", France = "Graffiti_stickers_france_A", Uk = "Graffiti_stickers_uk", China = "Graffiti_stickers_china", Japan = "Graffiti_stickers_japan"
     
     static let allValues = [Ussr, Germany, Usa, France, Uk, China, Japan]
 }
@@ -65,9 +60,22 @@ struct VehicleNationImageNameStruct {
     }
 }
 
-
-/*
-for category in ProductCategory.allValues{
-    //Do something
+enum VehicleTypeEnum : String {
+    case Heavy = "heavyTank", Medium = "mediumTank", Light = "lightTank", SPG = "SPG", TankDestroyer = "AT-SPG"
+    
+    static let allValues = [Heavy, Medium, Light, SPG, TankDestroyer]
 }
-*/
+
+struct VehicleTypeImageName {
+    
+    var Heavy = "heavy"
+    var Medium = "medium"
+    var Light = "light"
+    var SPG = "artillery"
+    var TankDestroyer = "tank_destroyer"
+
+    func allValuesDict () -> [VehicleTypeEnum : String] {
+        
+        return [ VehicleTypeEnum.Heavy : Heavy, VehicleTypeEnum.Medium : Medium, VehicleTypeEnum.Light : Light, VehicleTypeEnum.SPG : SPG, VehicleTypeEnum.TankDestroyer : TankDestroyer]
+    }
+}

@@ -10,6 +10,7 @@ import Foundation
 
 let nickNameKey = "nickname"
 let accountIdKey = "account_id"
+let accessTokenKey = "access_token"
 
 class ProfileInteractor {
    
