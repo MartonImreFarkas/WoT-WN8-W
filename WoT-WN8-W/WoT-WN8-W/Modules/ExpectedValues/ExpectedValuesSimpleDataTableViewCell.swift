@@ -24,10 +24,20 @@ class ExpectedValuesSimpleDataTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func setupHeaderCell(playerName: String) {
+        nameLabel.text = ""
+        playerValueLabel.text = playerName
+        expectedValueLabel.text = "Expected"
+    }
     
-    func setupCell(name: String, playerValue: String, expectedValue: String) {
+    func setupCell(name: String, playerValue: Double, expectedValue: Double, hasBattles : Bool) {
         nameLabel.text = name
-        playerValueLabel.text = playerValue
-        expectedValueLabel.text = expectedValue
+        playerValueLabel.text = String(format: "%.02f", playerValue)
+        
+        if playerValue != expectedValue && hasBattles {
+            playerValueLabel.textColor = playerValue < expectedValue ? UIColor.redColor() : UIColor.greenColor()
+        }
+        
+        expectedValueLabel.text = "\(expectedValue)"
     }
 }

@@ -80,11 +80,11 @@ class ExpectedValuesNotLoggedInBigTableViewCell: UITableViewCell {
         tankIcon.layer.borderWidth = 1.0
         tankIcon.layer.borderColor = UIColor.grayColor().CGColor
         
-        damageLabel.text = "\(expectedValues.expDamage!)"
-        fragLabel.text = "\(expectedValues.expFrag!)"
-        spotLabel.text = "\(expectedValues.expSpot!)"
-        defLabel.text = "\(expectedValues.expDef!)"
-        winRateLabel.text = "\(expectedValues.expWinRate!)%"
+        damageLabel.text = String(format: "%.0f", expectedValues.expDamage!)
+        fragLabel.text = String(format: "%.02f", expectedValues.expFrag!)
+        spotLabel.text = String(format: "%.02f", expectedValues.expSpot!)
+        defLabel.text = String(format: "%.02f", expectedValues.expDef!)
+        winRateLabel.text = String(format: "%.02f%", expectedValues.expWinRate!)
         
         
         

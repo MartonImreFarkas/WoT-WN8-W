@@ -34,7 +34,7 @@ class ExpectedValuesMainDataTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupCell(vehicleData: VehicleDataStruct, wn8: Int, battles: Int) {
+    func setupCell(vehicleData: VehicleDataStruct, wn8: Double, battles: Int) {
         
         tankIcon.kf_setImageWithURL( NSURL(string: vehicleData.image!)!)
         
@@ -44,8 +44,42 @@ class ExpectedValuesMainDataTableViewCell: UITableViewCell {
         tankNameLabel.text = vehicleData.short_name_i18n
         tierLabel.text = ator(vehicleData.level!)
         
-        wn8ValueLabel.text = "\(wn8)"
+        wn8ValueLabel.text = String(format: "%.02f", wn8)
+        wn8ValueLabel.textColor = wn8Color(Int(wn8))
+        
         battleCountLabel.text = "\(battles)"
+    }
+    
+    
+    
+    func wn8Color(rating: Int) -> UIColor {
+        if rating <  300 {
+            return UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+        }
+        if rating <  600 {
+            return UIColor(red: 238.0/255, green: 48.0/255, blue: 48.0/255, alpha: 1.0)
+        }
+        if rating <  900 {
+            return UIColor(red: 241.0/255, green: 122.0/255, blue: 0.0/255, alpha: 1.0)
+        }
+        if rating < 1250 {
+            return UIColor(red: 227.0/255, green: 183.0/255, blue: 0.0/255, alpha: 1.0)
+        }
+        if rating < 1600 {
+            return UIColor(red: 86.0/255, green: 150.0/255, blue: 0.0/255, alpha: 1.0)
+        }
+        if rating < 1900 {
+            return UIColor(red: 43.0/255, green: 119.0/255, blue: 34.0/255, alpha: 1.0)
+        }
+        if rating < 2350 {
+            return UIColor(red: 0.0/255, green: 147.0/255, blue: 186.0/255, alpha: 1.0)
+        }
+        if rating < 2900 {
+            return UIColor(red: 146.0/255, green: 86.0/255, blue: 161.0/255, alpha: 1.0)
+        }
+       
+        return UIColor(red: 101.0/255, green: 45.0/255, blue: 120.0/255, alpha: 1.0)
+        
     }
     
     func ator(var n: Int) -> String {

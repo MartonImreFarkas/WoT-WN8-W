@@ -16,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sxf-zn-iDZ" userLabel="tankIcon">
-                        <rect key="frame" x="2" y="5" width="105" height="70"/>
+                        <rect key="frame" x="5" y="5" width="105" height="70"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="70" id="5K5-ot-esU"/>
                             <constraint firstAttribute="width" constant="105" id="M4r-A1-sHl"/>
@@ -30,14 +30,14 @@
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fNd-HV-WqQ" userLabel="typeIcon">
-                        <rect key="frame" x="58" y="75" width="40" height="44"/>
+                        <rect key="frame" x="61" y="75" width="40" height="44"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="fNd-HV-WqQ" secondAttribute="height" multiplier="34:38" id="ho0-ob-Pld"/>
                             <constraint firstAttribute="width" constant="40" id="vII-dU-lgO"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KV-1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999987" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dR-q5-THS" userLabel="tank name label">
-                        <rect key="frame" x="122" y="27" width="102" height="27"/>
+                        <rect key="frame" x="115" y="27" width="109" height="27"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="K88-3Y-OkW"/>
                         </constraints>
@@ -137,7 +137,7 @@
                     <constraint firstItem="sxf-zn-iDZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="dIE-Zb-tbm"/>
                     <constraint firstItem="7DO-JM-XIl" firstAttribute="centerY" secondItem="fNd-HV-WqQ" secondAttribute="centerY" id="e4B-QG-9Z5"/>
                     <constraint firstItem="PM4-Bz-KPh" firstAttribute="width" secondItem="N77-Qf-sk5" secondAttribute="width" id="hET-s6-Z91"/>
-                    <constraint firstItem="sxf-zn-iDZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="hsJ-zq-2dm"/>
+                    <constraint firstItem="sxf-zn-iDZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="hsJ-zq-2dm"/>
                     <constraint firstItem="PM4-Bz-KPh" firstAttribute="top" secondItem="sxf-zn-iDZ" secondAttribute="bottom" id="jI9-JS-yRp"/>
                     <constraint firstItem="g9i-zo-BUn" firstAttribute="centerX" secondItem="7wX-yf-b6q" secondAttribute="centerX" id="p9s-RL-L4U"/>
                     <constraint firstItem="7wX-yf-b6q" firstAttribute="width" secondItem="N77-Qf-sk5" secondAttribute="width" id="pVt-iZ-4we"/>
@@ -150,7 +150,7 @@
                     <constraint firstAttribute="trailing" secondItem="otW-tE-vtO" secondAttribute="trailing" id="uaM-26-5QP"/>
                     <constraint firstItem="PM4-Bz-KPh" firstAttribute="centerX" secondItem="uCq-ig-gxY" secondAttribute="centerX" id="wL2-T7-Axc"/>
                     <constraint firstItem="7DO-JM-XIl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xwQ-ez-Ojr"/>
-                    <constraint firstItem="2dR-q5-THS" firstAttribute="leading" secondItem="sxf-zn-iDZ" secondAttribute="trailing" constant="15" id="zOF-my-cWe"/>
+                    <constraint firstItem="2dR-q5-THS" firstAttribute="leading" secondItem="sxf-zn-iDZ" secondAttribute="trailing" constant="5" id="zOF-my-cWe"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

@@ -103,7 +103,7 @@ extension VehicleListViewController : UITableViewDelegate {
         if (segue.identifier == "expectedValuesDetailsSegue") {
                 
             // initialize new view controller and cast it as your view controller
-            var viewController = segue.destinationViewController as! ExpectedValuesDetailsViewController
+            var viewController = segue.destinationViewController as! WN8DetailsViewController
             // your new view controller should have property that will store passed value
             
             

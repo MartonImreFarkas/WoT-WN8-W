@@ -34,7 +34,6 @@
 		0B99280E1B1C765700E2A863 /* VehicleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99280D1B1C765700E2A863 /* VehicleListInteractor.swift */; };
 		0B9928101B1C7C6700E2A863 /* VehicleDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99280F1B1C7C6700E2A863 /* VehicleDataStruct.swift */; };
 		0B9928161B1C890300E2A863 /* ExpectedValuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928151B1C890300E2A863 /* ExpectedValuesTableViewCell.swift */; };
-		0B99281A1B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928191B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift */; };
 		0B99281C1B1D97E800E2A863 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99281B1B1D97E800E2A863 /* ImageLoader.swift */; };
 		0B99281E1B1DC45D00E2A863 /* TankMinimalDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B99281D1B1DC45D00E2A863 /* TankMinimalDescriptionTableViewCell.xib */; };
 		0B9928201B1DC84200E2A863 /* TankMinimalDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99281F1B1DC84200E2A863 /* TankMinimalDescriptionTableViewCell.swift */; };
@@ -43,6 +42,10 @@
 		0B9928281B1EE21000E2A863 /* ExpectedValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928271B1EE21000E2A863 /* ExpectedValuesViewController.swift */; };
 		0B99282B1B1EFDE900E2A863 /* ExpectedValuesNotLoggedInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9928291B1EFDE900E2A863 /* ExpectedValuesNotLoggedInTableViewCell.swift */; };
 		0B99282C1B1EFDE900E2A863 /* ExpectedValuesNotLoggedInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B99282A1B1EFDE900E2A863 /* ExpectedValuesNotLoggedInTableViewCell.xib */; };
+		0BC09A791B25860800DC7765 /* WN8DetailsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC09A781B25860800DC7765 /* WN8DetailsWireFrame.swift */; };
+		0BC09A7B1B25862900DC7765 /* WN8DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC09A7A1B25862900DC7765 /* WN8DetailsPresenter.swift */; };
+		0BC09A7D1B25863800DC7765 /* WN8DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC09A7C1B25863800DC7765 /* WN8DetailsViewController.swift */; };
+		0BC09A7F1B25865300DC7765 /* WN8DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC09A7E1B25865300DC7765 /* WN8DetailsInteractor.swift */; };
 		0BCA6D231B1F4B2A00505693 /* ExpectedValuesNotLoggedInBigTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA6D211B1F4B2A00505693 /* ExpectedValuesNotLoggedInBigTableViewCell.swift */; };
 		0BCA6D241B1F4B2A00505693 /* ExpectedValuesNotLoggedInBigTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BCA6D221B1F4B2A00505693 /* ExpectedValuesNotLoggedInBigTableViewCell.xib */; };
 		0BCA6D281B204BB600505693 /* ExpectedValuesMainDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA6D271B204BB600505693 /* ExpectedValuesMainDataTableViewCell.swift */; };
@@ -94,7 +97,6 @@
 		0B99280D1B1C765700E2A863 /* VehicleListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehicleListInteractor.swift; path = Modules/VehiclesList/VehicleListInteractor.swift; sourceTree = "<group>"; };
 		0B99280F1B1C7C6700E2A863 /* VehicleDataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehicleDataStruct.swift; path = Modules/VehiclesList/VehicleDataStruct.swift; sourceTree = "<group>"; };
 		0B9928151B1C890300E2A863 /* ExpectedValuesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesTableViewCell.swift; path = Modules/ExpectedValues/ExpectedValuesTableViewCell.swift; sourceTree = "<group>"; };
-		0B9928191B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesDetailsViewController.swift; path = Modules/ExpectedValues/ExpectedValuesDetailsViewController.swift; sourceTree = "<group>"; };
 		0B99281B1B1D97E800E2A863 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Common/ImageLoader.swift; sourceTree = "<group>"; };
 		0B99281D1B1DC45D00E2A863 /* TankMinimalDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TankMinimalDescriptionTableViewCell.xib; path = Common/TankMinimalDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		0B99281F1B1DC84200E2A863 /* TankMinimalDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TankMinimalDescriptionTableViewCell.swift; path = Common/TankMinimalDescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -103,6 +105,10 @@
 		0B9928271B1EE21000E2A863 /* ExpectedValuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesViewController.swift; path = Modules/ExpectedValues/ExpectedValuesViewController.swift; sourceTree = "<group>"; };
 		0B9928291B1EFDE900E2A863 /* ExpectedValuesNotLoggedInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesNotLoggedInTableViewCell.swift; path = Common/ExpectedValuesNotLoggedInTableViewCell.swift; sourceTree = "<group>"; };
 		0B99282A1B1EFDE900E2A863 /* ExpectedValuesNotLoggedInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpectedValuesNotLoggedInTableViewCell.xib; path = Common/ExpectedValuesNotLoggedInTableViewCell.xib; sourceTree = "<group>"; };
+		0BC09A781B25860800DC7765 /* WN8DetailsWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WN8DetailsWireFrame.swift; path = Modules/WN8Details/WN8DetailsWireFrame.swift; sourceTree = "<group>"; };
+		0BC09A7A1B25862900DC7765 /* WN8DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WN8DetailsPresenter.swift; path = Modules/WN8Details/WN8DetailsPresenter.swift; sourceTree = "<group>"; };
+		0BC09A7C1B25863800DC7765 /* WN8DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WN8DetailsViewController.swift; path = Modules/WN8Details/WN8DetailsViewController.swift; sourceTree = "<group>"; };
+		0BC09A7E1B25865300DC7765 /* WN8DetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WN8DetailsInteractor.swift; sourceTree = "<group>"; };
 		0BCA6D211B1F4B2A00505693 /* ExpectedValuesNotLoggedInBigTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesNotLoggedInBigTableViewCell.swift; path = Common/ExpectedValuesNotLoggedInBigTableViewCell.swift; sourceTree = "<group>"; };
 		0BCA6D221B1F4B2A00505693 /* ExpectedValuesNotLoggedInBigTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpectedValuesNotLoggedInBigTableViewCell.xib; path = Common/ExpectedValuesNotLoggedInBigTableViewCell.xib; sourceTree = "<group>"; };
 		0BCA6D271B204BB600505693 /* ExpectedValuesMainDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectedValuesMainDataTableViewCell.swift; path = Modules/ExpectedValues/ExpectedValuesMainDataTableViewCell.swift; sourceTree = "<group>"; };
@@ -226,6 +232,7 @@
 				0B876BDA1B189843001CAE22 /* Profile */,
 				0B9927FF1B1C546A00E2A863 /* ExpectedValues */,
 				0B99280C1B1C761400E2A863 /* VehiclesList */,
+				0BC09A771B2583C600DC7765 /* WN8Details */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -262,9 +269,6 @@
 				0B9928061B1C570900E2A863 /* ExpectedValuesInteractor.swift */,
 				0B9928081B1C585200E2A863 /* ExpectedValuesDataStore.swift */,
 				0B99280A1B1C5CC700E2A863 /* ExpectedValueStruct.swift */,
-				0B9928191B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift */,
-				0BCA6D271B204BB600505693 /* ExpectedValuesMainDataTableViewCell.swift */,
-				0BCA6D291B204BD500505693 /* ExpectedValuesSimpleDataTableViewCell.swift */,
 				0BCA6D2B1B2081E400505693 /* VehiclePersonalDataInteractor.swift */,
 				0BCA6D2D1B2185F500505693 /* VehiclePersonalData.swift */,
 			);
@@ -281,6 +285,19 @@
 				0B99280F1B1C7C6700E2A863 /* VehicleDataStruct.swift */,
 			);
 			name = VehiclesList;
+			sourceTree = "<group>";
+		};
+		0BC09A771B2583C600DC7765 /* WN8Details */ = {
+			isa = PBXGroup;
+			children = (
+				0BCA6D271B204BB600505693 /* ExpectedValuesMainDataTableViewCell.swift */,
+				0BCA6D291B204BD500505693 /* ExpectedValuesSimpleDataTableViewCell.swift */,
+				0BC09A781B25860800DC7765 /* WN8DetailsWireFrame.swift */,
+				0BC09A7A1B25862900DC7765 /* WN8DetailsPresenter.swift */,
+				0BC09A7C1B25863800DC7765 /* WN8DetailsViewController.swift */,
+				0BC09A7E1B25865300DC7765 /* WN8DetailsInteractor.swift */,
+			);
+			name = WN8Details;
 			sourceTree = "<group>";
 		};
 		CB26EF562E3C0C7619A0575A /* Pods */ = {
@@ -476,15 +493,18 @@
 				0B876BE21B189D35001CAE22 /* ProfileInteractor.swift in Sources */,
 				0B876BD51B14BA9B001CAE22 /* LoginViewController.swift in Sources */,
 				0B9928071B1C570900E2A863 /* ExpectedValuesInteractor.swift in Sources */,
+				0BC09A7B1B25862900DC7765 /* WN8DetailsPresenter.swift in Sources */,
 				0BCA6D2E1B2185F600505693 /* VehiclePersonalData.swift in Sources */,
 				0B876BA51B14A328001CAE22 /* ViewController.swift in Sources */,
+				0BC09A7D1B25863800DC7765 /* WN8DetailsViewController.swift in Sources */,
 				0B9928241B1EE06F00E2A863 /* VehicleListPresenter.swift in Sources */,
 				0B876BD11B14BA6A001CAE22 /* LoginWireFrame.swift in Sources */,
 				0B99281C1B1D97E800E2A863 /* ImageLoader.swift in Sources */,
 				0B9928201B1DC84200E2A863 /* TankMinimalDescriptionTableViewCell.swift in Sources */,
 				0B876BA31B14A328001CAE22 /* AppDelegate.swift in Sources */,
+				0BC09A791B25860800DC7765 /* WN8DetailsWireFrame.swift in Sources */,
 				0B876BE01B189CAE001CAE22 /* ProfileViewController.swift in Sources */,
-				0B99281A1B1CA70B00E2A863 /* ExpectedValuesDetailsViewController.swift in Sources */,
+				0BC09A7F1B25865300DC7765 /* WN8DetailsInteractor.swift in Sources */,
 				0B9928011B1C549A00E2A863 /* ExpectedValuesWireFrame.swift in Sources */,
 				0B9928101B1C7C6700E2A863 /* VehicleDataStruct.swift in Sources */,
 				0B876BD91B188059001CAE22 /* UserDataStore.swift in Sources */,

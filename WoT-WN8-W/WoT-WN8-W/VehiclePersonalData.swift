@@ -20,30 +20,30 @@ class VehiclePersonalData {
 
 struct VehicleBattleStat {
     
-    var avg_damage_blocked : Double?
-    var base_xp : Int?
-    var battle_avg_xp : Int?
-    var battles : Int?
-    var capture_points : Int?
-    var damage_dealt : Int?
-    var damage_received : Int?
-    var direct_hits_received : Int?
-    var draws : Int?
-    var dropped_capture_points : Int?
-    var explosion_hits : Int?
-    var explosion_hits_received : Int?
-    var frags : Int?
-    var hits : Int?;
-    var hits_percents : Int?
-    var losses : Int?
-    var no_damage_direct_hits_received : Int?
-    var piercings : Int?
-    var piercings_received : Int?
-    var shots : Int?
-    var spotted : Int?
-    var survived_battles : Int?
-    var tanking_factor : Double?
-    var wins : Int?
-    var xp : Int?
+    var avg_damage_blocked : Double = 0
+    var base_xp : Int = 0
+    var battle_avg_xp : Int = 0
+    var battles : Int = 0
+    var capture_points : Int = 0
+    var damage_dealt : Int = 0
+    var damage_received : Int = 0
+    var direct_hits_received : Int = 0
+    var draws : Int = 0
+    var dropped_capture_points : Int = 0
+    var explosion_hits : Int = 0
+    var explosion_hits_received : Int = 0
+    var frags : Int = 0
+    var hits : Int = 0
+    var hits_percents : Int = 0
+    var losses : Int = 0
+    var no_damage_direct_hits_received : Int = 0
+    var piercings : Int = 0
+    var piercings_received : Int = 0
+    var shots : Int = 0
+    var spotted : Int = 0
+    var survived_battles : Int = 0
+    var tanking_factor : Double = 0
+    var wins : Int = 0
+    var xp : Int = 0
 
 }

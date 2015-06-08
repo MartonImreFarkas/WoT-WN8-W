@@ -48,39 +48,40 @@ class VehiclePersonalDataInteractor {
                 let vtinD = VehicleTypeImageName().allValuesDict()
                 
                 for (accountIdKey, accountData) in items {
-                    let dict =  accountData[0] as! NSDictionary
+                    if let dict =  accountData[0] as? NSDictionary {
                     
                     var vehicleAllBattleStat = VehicleBattleStat()
                     
                     let allBattleDict = dict["all"] as! NSDictionary
                     
-                    vehicleAllBattleStat.avg_damage_blocked = allBattleDict["avg_damage_blocked"] as? Double
-                    vehicleAllBattleStat.base_xp = allBattleDict["base_xp"] as? Int
-                    vehicleAllBattleStat.battle_avg_xp = allBattleDict["battle_avg_xp"] as? Int
-                    vehicleAllBattleStat.battles = allBattleDict["battles"] as? Int
-                    vehicleAllBattleStat.capture_points = allBattleDict["capture_points"] as? Int
-                    vehicleAllBattleStat.damage_dealt = allBattleDict["damage_dealt"] as? Int
-                    vehicleAllBattleStat.damage_received = allBattleDict["damage_received"] as? Int
-                    vehicleAllBattleStat.direct_hits_received = allBattleDict["direct_hits_received"] as? Int
-                    vehicleAllBattleStat.draws = allBattleDict["draws"] as? Int
-                    vehicleAllBattleStat.dropped_capture_points = allBattleDict["dropped_capture_points"] as? Int
-                    vehicleAllBattleStat.explosion_hits = allBattleDict["explosion_hits"] as? Int
-                    vehicleAllBattleStat.explosion_hits_received = allBattleDict["explosion_hits_received"] as? Int
-                    vehicleAllBattleStat.frags = allBattleDict["frags"] as? Int
-                    vehicleAllBattleStat.hits = allBattleDict["hits"] as? Int
-                    vehicleAllBattleStat.hits_percents = allBattleDict["hits_percents"] as? Int
-                    vehicleAllBattleStat.losses = allBattleDict["losses"] as? Int
-                    vehicleAllBattleStat.no_damage_direct_hits_received = allBattleDict["no_damage_direct_hits_received"] as? Int
-                    vehicleAllBattleStat.piercings = allBattleDict["piercings"] as? Int
-                    vehicleAllBattleStat.piercings_received = allBattleDict["piercings_received"] as? Int
-                    vehicleAllBattleStat.shots = allBattleDict["shots"] as? Int
-                    vehicleAllBattleStat.spotted = allBattleDict["spotted"] as? Int
-                    vehicleAllBattleStat.survived_battles = allBattleDict["survived_battles"] as? Int
-                    vehicleAllBattleStat.tanking_factor = allBattleDict["tanking_factor"] as? Double
-                    vehicleAllBattleStat.wins = allBattleDict["wins"] as? Int
-                    vehicleAllBattleStat.xp = allBattleDict["xp"] as? Int
+                    vehicleAllBattleStat.avg_damage_blocked = allBattleDict["avg_damage_blocked"] as! Double
+                    vehicleAllBattleStat.base_xp = allBattleDict["base_xp"] as! Int
+                    vehicleAllBattleStat.battle_avg_xp = allBattleDict["battle_avg_xp"] as! Int
+                    vehicleAllBattleStat.battles = allBattleDict["battles"] as! Int
+                    vehicleAllBattleStat.capture_points = allBattleDict["capture_points"] as! Int
+                    vehicleAllBattleStat.damage_dealt = allBattleDict["damage_dealt"] as! Int
+                    vehicleAllBattleStat.damage_received = allBattleDict["damage_received"] as! Int
+                    vehicleAllBattleStat.direct_hits_received = allBattleDict["direct_hits_received"] as! Int
+                    vehicleAllBattleStat.draws = allBattleDict["draws"] as! Int
+                    vehicleAllBattleStat.dropped_capture_points = allBattleDict["dropped_capture_points"] as! Int
+                    vehicleAllBattleStat.explosion_hits = allBattleDict["explosion_hits"] as! Int
+                    vehicleAllBattleStat.explosion_hits_received = allBattleDict["explosion_hits_received"] as! Int
+                    vehicleAllBattleStat.frags = allBattleDict["frags"] as! Int
+                    vehicleAllBattleStat.hits = allBattleDict["hits"] as! Int
+                    vehicleAllBattleStat.hits_percents = allBattleDict["hits_percents"] as! Int
+                    vehicleAllBattleStat.losses = allBattleDict["losses"] as! Int
+                    vehicleAllBattleStat.no_damage_direct_hits_received = allBattleDict["no_damage_direct_hits_received"] as! Int
+                    vehicleAllBattleStat.piercings = allBattleDict["piercings"] as! Int
+                    vehicleAllBattleStat.piercings_received = allBattleDict["piercings_received"] as! Int
+                    vehicleAllBattleStat.shots = allBattleDict["shots"] as! Int
+                    vehicleAllBattleStat.spotted = allBattleDict["spotted"] as! Int
+                    vehicleAllBattleStat.survived_battles = allBattleDict["survived_battles"] as! Int
+                    vehicleAllBattleStat.tanking_factor = allBattleDict["tanking_factor"] as! Double
+                    vehicleAllBattleStat.wins = allBattleDict["wins"] as! Int
+                    vehicleAllBattleStat.xp = allBattleDict["xp"] as! Int
                     
                     vehiclePersonalData.allBattleStat = vehicleAllBattleStat
+                    }
 
                 }
             }
